@@ -1,0 +1,24 @@
+//program to show whether the user qualifies for a loan
+/*
+author:george mwalimu nzomo
+date:23/09/2024
+*/
+#include <stdio.h>
+int main() {
+	int age;
+	
+	float amount;
+	printf("enter age:");
+	scanf("%d",&age);
+	
+	printf("enter amount:");
+	scanf("%f",&amount);
+	
+	if ( amount>=21000 && age>=21)
+	{
+		printf("congratulations you qalify fo4 the loan:"); }
+		else{
+		printf("unfortunately, we are unable to offer a loan at this time:");
+		}
+		return 0;
+}

@@ -1,0 +1,48 @@
+//program to 
+/*
+author:george mwlimu
+date:23/09/2024
+*/
+#include <stdio.h>
+int main() {
+	int bookid;
+	int duedate;
+	int returndate;
+	
+	printf("enter bookid:");
+	scanf("%d",&bookid);
+	
+	printf("enter dueate:");
+	scanf("%d",&duedate);
+	
+	printf("enter returndate:");
+	scanf("%d",&returndate);
+	
+	int overduedays;
+	overduedays=returndate-duedate;
+	
+	int finerate;
+	if (overduedays>0 && overduedays>=7)
+	{finerate=20;
+	}
+	else if(overduedays>7 && overduedays<=14){finerate=50;
+	}
+	else( overduedays>14);
+	{finerate=100;
+	}
+	int fineamount;
+	//calculate fine amount
+	fineamount=finerate*overduedays;
+	printf("overduedays%d\n",overduedays);
+	printf("finerate%d\n",finerate);
+	printf("fine amount %f",fineamount);
+	
+	return 0;
+}
+		
+		
+		
+		
+		
+		
+	

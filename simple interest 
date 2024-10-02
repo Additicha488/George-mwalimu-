@@ -1,0 +1,26 @@
+//program to calculate simple interest
+/*
+author:george mwalimu
+date:23/04/2024
+*/
+#include <stdio.h>
+int main() {
+	float p,r,t,s,i;
+	printf("enter principal:");
+	scanf("%f",&p);
+	//p=principal
+	
+	printf("enter rate:");
+	scanf("%f",&r);
+	//r=rate
+	
+	printf("ente time:");
+	scanf("%f",&t);
+	//t=time
+	
+	int simpleinterest=(p*r*t/100);
+	printf("simple interest %.f");
+	
+	return 0;
+	
+}

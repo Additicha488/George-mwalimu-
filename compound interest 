@@ -1,0 +1,29 @@
+//program to calculate compound interest
+/*
+author:george mwalimu nzomo
+date:23/04/2024
+*/
+
+#include <stdio.h>
+#include<math.h>
+int main() {
+	float a,p,r,t,n,ci;
+	printf("enter principal:");
+	scanf("%f",&p);
+	//p=principal
+	
+	printf("enter rate:");
+	scanf("%f",&r);
+	//r=rate
+	
+	printf("enter number of times interest is compounded per year:");
+	scanf("%f",&n);
+	
+	printf("enter time:");
+	scanf("%f",&t);
+	
+	a=p*pow((1+(r/100*n)),n*t);
+	printf("the amount is%f",a);
+	printf("the compound intrest is %f",ci);
+	return 0;
+}
